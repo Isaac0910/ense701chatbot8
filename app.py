@@ -42,10 +42,12 @@ def webhook():
 
                     entity, value = wit_response(messaging_text)
 
-                    if entity == 'entity type1':
-                        response = "response1{}".format(str(value))
-                    elif entity == 'entity typ2':
-                        response = "response2{}".format(str(value))
+                    if entity == 'autPaper':
+                        response = "paper {}".format(str(value))
+                    elif entity == 'autMajor':
+                        response = "major {}".format(str(value))
+                    elif entity == 'autCourse':
+                        response = "course {}".format(str(value))
 
                     if response is None:
                         response = "Sorry, I didn't understand that."
