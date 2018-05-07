@@ -42,7 +42,7 @@ def webhook():
 
                     entity, value = wit_response(messaging_text)
 
-                    if entity == 'autPaper':
+                    if entity == 'intent':
                         response = "paper {}".format(str(value))
                     elif entity == 'autMajor':
                         response = "major {}".format(str(value))
