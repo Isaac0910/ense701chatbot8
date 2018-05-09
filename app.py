@@ -62,7 +62,10 @@ def webhook():
                             response = "Unknown intent"
                     elif entity == 'autPaper':
                         response = "paper {}".format(str(value))
-
+                    elif entity == 'autMajor':
+                        response = "Major {}".format(str(value))
+                    elif entity == 'autCourse':
+                        response = 'autCourse {}'.format(str(value))
                     if response is None:
                         response = "Sorry, I didn't understand that."
 
