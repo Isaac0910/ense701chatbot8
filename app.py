@@ -67,7 +67,7 @@ def webhook():
                     elif entity == 'autCourse':
                         response = 'Course {}'.format(str(value))
                     if response is None:
-                        response = "Sorry, I didn't understand that."
+                        response = "Sorry, I didn't understand that.enter some course number"
 
                     bot.send_text_message(sender_id, response)
 
