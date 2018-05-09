@@ -58,7 +58,7 @@ def webhook():
                         elif value == 'getPapers':
                             response = "intent = getPapers"
                             # some code
-                        else
+                        else:
                             response = "Unknown intent"
                     elif entity == 'autPaper':
                         response = "paper {}".format(str(value))
