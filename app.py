@@ -43,11 +43,23 @@ def webhook():
                     entity, value = wit_response(messaging_text)
 
                     if entity == 'intent':
-                        response = "paper {}".format(str(value))
-                    elif entity == 'autMajor':
-                        response = "major {}".format(str(value))
-                    elif entity == 'autCourse':
-                        response = "course {}".format(str(value))
+                        if value == 'getPreRequisites':
+                            response = "intent = getPreRequisites"
+                            # some
+                        elif value == 'getCoRequisites':
+                            response = "intent = getCoRequisites"
+                            # some
+                        elif value == 'getCourses':
+                            response = "intent = getCourses"
+                            # some
+                        elif value == 'getMajors':
+                            response = "intent = getMajors"
+                            # some
+                        elif value == 'getPapers':
+                            response = "intent = getPapers"
+                            # some code
+
+                        # response = "paper {}".format(str(value))
 
                     if response is None:
                         response = "Sorry, I didn't understand that."
