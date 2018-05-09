@@ -65,7 +65,7 @@ def webhook():
                     elif entity == 'autMajor':
                         response = "Major {}".format(str(value))
                     elif entity == 'autCourse':
-                        response = 'autCourse {}'.format(str(value))
+                        response = 'Course {}'.format(str(value))
                     if response is None:
                         response = "Sorry, I didn't understand that."
 
